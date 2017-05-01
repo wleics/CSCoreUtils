@@ -31,7 +31,7 @@
 }
 
 -(void)doPost:(NSString *)url
-  andPostData:(NSDictionary *)parameters
+  andPostData:(NSMutableDictionary *)parameters
   andComplete:(rquestCompleteBlock) complete
      andError:(requstErrorBlock)error{
     
@@ -42,7 +42,11 @@
                              andError:error];
 }
 
--(void)doPost:(NSString *)url andPostData:(NSDictionary *)parameters andComplete:(rquestCompleteBlock)complete andProblem:(requstProblemBlock)problem andError:(requstErrorBlock)requestError{
+-(void)doPost:(NSString *)url
+  andPostData:(NSMutableDictionary *)parameters
+  andComplete:(rquestCompleteBlock)complete
+   andProblem:(requstProblemBlock)problem
+     andError:(requstErrorBlock)requestError{
     
     [self.zwAFNetWorkHttpUtils doPost:url
                           andPostData:parameters

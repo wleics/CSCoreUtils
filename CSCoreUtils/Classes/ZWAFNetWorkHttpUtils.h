@@ -29,7 +29,7 @@ typedef void (^requstErrorBlock)(NSError *error);
  *  @param error   错误请求
  */
 -(void)doPost:(NSString *)url
-  andPostData:(NSDictionary *)parameters
+  andPostData:(NSMutableDictionary *)parameters
   andComplete:(rquestCompleteBlock) comlete
    andProblem:(requstProblemBlock) problem
      andError:(requstErrorBlock)error;

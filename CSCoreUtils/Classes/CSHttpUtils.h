@@ -34,7 +34,7 @@ typedef void (^requstErrorBlock)(NSError *error);
  @param error 请求出错的代码块
  */
 -(void)doPost:(NSString *)url
-  andPostData:(NSDictionary *)parameters
+  andPostData:(NSMutableDictionary *)parameters
   andComplete:(rquestCompleteBlock) complete
      andError:(requstErrorBlock)error;
 
@@ -48,7 +48,7 @@ typedef void (^requstErrorBlock)(NSError *error);
  *  @param error   错误请求
  */
 -(void)doPost:(NSString *)url
-  andPostData:(NSDictionary *)parameters
+  andPostData:(NSMutableDictionary *)parameters
   andComplete:(rquestCompleteBlock) complete
    andProblem:(requstProblemBlock) problem
      andError:(requstErrorBlock)error;
