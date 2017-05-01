@@ -11,7 +11,6 @@
 #import "ZWAFNetWorkHttpUtils.h"
 #import <AFNetworking/AFNetworking.h>
 #import "HttpRequestBase.h"
-#import "NSObject+CSJsonUtil.h"
 
 
 @interface ZWAFNetWorkHttpUtils()
@@ -59,7 +58,7 @@
                  complete:(rquestCompleteBlock) complete
                   problem:(requstProblemBlock) problem
                     error:(requstErrorBlock)error{
-    NSLog(@"执行请求的url为:%@",url);
+    NSLog(@"url:%@",url);
     
     //复制block
     _completeBlock = complete;
@@ -75,7 +74,7 @@
               progress:nil
                success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                    if (_canceled) {
-                       NSLog(@"AFnetWork的网络请求被取消了！");
+                       NSLog(@"AFnetWork cancel！");
                        return ;
                    }
                    NSDictionary *dict = responseObject;

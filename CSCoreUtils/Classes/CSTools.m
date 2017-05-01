@@ -1,20 +1,19 @@
 //
-//  NSObject+CSJsonUtil.m
+//  CSTools.m
 //  Pods
 //
 //  Created by wlei on 2017/5/1.
 //
 //
 
-#import "NSObject+CSJsonUtil.h"
+#import "CSTools.h"
 
-@implementation NSObject (CSJsonUtil)
+@implementation CSTools
 
--(NSString *)objToJsonString
-{
++ (NSString *)objToJsonString:(id)obj{
     NSString *jsonString = nil;
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:obj
                                                        options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
                                                          error:&error];
     if (! jsonData) {

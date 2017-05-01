@@ -1,6 +1,6 @@
 {
   "name": "CSCoreUtils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "A short description of CSCoreUtils.",
   "description": "常用工具整合框架",
   "homepage": "https://github.com/wleics/CSCoreUtils",
@@ -13,12 +13,13 @@
   },
   "source": {
     "git": "https://github.com/wleics/CSCoreUtils.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "CSCoreUtils/Classes/**/*",
+  "public_header_files": "CSCoreUtils/Classes/**/*.h",
   "frameworks": [
     "UIKit",
     "SystemConfiguration",

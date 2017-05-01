@@ -8,3 +8,10 @@
 
 #import "CSHttpUtils.h"
 #import "HttpRequestBase.h"
+#import "CSTools.h"
+
+#ifdef DEBUG
+#   define CSLog(...) NSLog(__VA_ARGS__)
+#else
+#   define CSLog(...)
+#endif

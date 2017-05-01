@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   #   'CSCoreUtils' => ['CSCoreUtils/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'CSCoreUtils/Classes/**/*.h'
   s.frameworks = 'UIKit', 'SystemConfiguration','MobileCoreServices'
   s.dependency 'AFNetworking', '~> 3.1'
   s.dependency 'MJExtension'
