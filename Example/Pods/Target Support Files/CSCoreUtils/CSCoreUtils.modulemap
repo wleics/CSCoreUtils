@@ -1,0 +1,6 @@
+framework module CSCoreUtils {
+  umbrella header "CSCoreUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

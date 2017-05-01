@@ -1,0 +1,35 @@
+{
+  "name": "CSCoreUtils",
+  "version": "0.1.0",
+  "summary": "A short description of CSCoreUtils.",
+  "description": "常用工具整合框架",
+  "homepage": "https://github.com/wleics/CSCoreUtils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wleics": "wleics@163.com"
+  },
+  "source": {
+    "git": "https://github.com/wleics/CSCoreUtils.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CSCoreUtils/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "SystemConfiguration",
+    "MobileCoreServices"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.1"
+    ],
+    "MJExtension": [
+
+    ]
+  }
+}

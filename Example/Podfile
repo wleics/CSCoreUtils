@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CSCoreUtils_Example' do
+  pod 'CSCoreUtils', :path => '../'
+
+  target 'CSCoreUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
