@@ -31,7 +31,7 @@
 }
 
 -(void)doPost:(NSString *)url
-  andPostData:(NSMutableDictionary *)parameters
+  andPostData:(NSDictionary *)parameters
   andComplete:(rquestCompleteBlock) complete
      andError:(requstErrorBlock)error{
     
@@ -43,7 +43,7 @@
 }
 
 -(void)doPost:(NSString *)url
-  andPostData:(NSMutableDictionary *)parameters
+  andPostData:(NSDictionary *)parameters
   andComplete:(rquestCompleteBlock)complete
    andProblem:(requstProblemBlock)problem
      andError:(requstErrorBlock)requestError{

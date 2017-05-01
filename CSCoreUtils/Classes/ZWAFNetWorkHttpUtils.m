@@ -11,7 +11,7 @@
 #import "ZWAFNetWorkHttpUtils.h"
 #import <AFNetworking/AFNetworking.h>
 #import "HttpRequestBase.h"
-#import <MJExtension/MJExtension.h>
+#import "NSObject+CSJsonUtil.h"
 
 
 @interface ZWAFNetWorkHttpUtils()
@@ -37,21 +37,20 @@
 }
 
 -(void)doPost:(NSString *)url
-  andPostData:(NSMutableDictionary *)parameters
+  andPostData:(NSDictionary *)parameters
   andComplete:(rquestCompleteBlock)comlete
    andProblem:(requstProblemBlock)problem
      andError:(requstErrorBlock)error{
+
+//    if (!parameters) {
+//        parameters = @{};
+//    }
+//    
+//    NSString *data = [self dataTOjsonString:parameters];
+//    NSLog(@"data:%@",data);
+//    NSDictionary *dic = @{@"data":data};
     
-    
-    
-    if (!parameters) {
-        parameters = @{};
-    }
-    
-    NSString *data = [parameters mj_JSONString];
-    NSDictionary *dic = @{@"data":data};
-    
-    [self executeHttpRequest:url parameters:dic complete:comlete problem:problem error:error];
+    [self executeHttpRequest:url parameters:parameters complete:comlete problem:problem error:error];
 }
 
 
@@ -125,6 +124,21 @@
         _manager=[AFHTTPSessionManager manager];
     }
     return _manager;
+}
+
+-(NSString*)dataTOjsonString:(id)object
+{
+    NSString *jsonString = nil;
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:object
+                                                       options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                         error:&error];
+    if (! jsonData) {
+        NSLog(@"Got an error: %@", error);
+    } else {
+        jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    return jsonString;
 }
 
 @end

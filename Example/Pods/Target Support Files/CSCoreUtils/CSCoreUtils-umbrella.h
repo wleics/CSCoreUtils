@@ -13,6 +13,7 @@
 #import "CSCoreUtils.h"
 #import "CSHttpUtils.h"
 #import "HttpRequestBase.h"
+#import "NSObject+CSJsonUtil.h"
 #import "ZWAFNetWorkHttpUtils.h"
 
 FOUNDATION_EXPORT double CSCoreUtilsVersionNumber;
