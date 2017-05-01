@@ -63,6 +63,7 @@
 		630DB0CB1EB6FD4700E3A5ED /* CSCoreUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSCoreUtils.framework; path = "../../Library/Developer/Xcode/DerivedData/CSCoreUtils-gvjexcxjniuuldatavkcelhtycyp/Build/Products/Debug-iphoneos/CSCoreUtils/CSCoreUtils.framework"; sourceTree = "<group>"; };
 		630DB0CD1EB6FF7D00E3A5ED /* CSCoreUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSCoreUtils.framework; path = "Pods/../build/Release-iphoneos/CSCoreUtils/CSCoreUtils.framework"; sourceTree = "<group>"; };
 		630DB0CF1EB6FF8E00E3A5ED /* Pods_CSCoreUtils_Example.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_CSCoreUtils_Example.framework; path = "Pods/../build/Debug-iphoneos/Pods_CSCoreUtils_Example.framework"; sourceTree = "<group>"; };
+		630DB0D11EB7035900E3A5ED /* CSCoreUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSCoreUtils.framework; path = "Pods/../build/Debug-iphoneos/CSCoreUtils/CSCoreUtils.framework"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F3583733F48177973572019 /* Pods_CSCoreUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSCoreUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +123,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				630DB0D11EB7035900E3A5ED /* CSCoreUtils.framework */,
 				630DB0CF1EB6FF8E00E3A5ED /* Pods_CSCoreUtils_Example.framework */,
 				630DB0CD1EB6FF7D00E3A5ED /* CSCoreUtils.framework */,
 				630DB0CB1EB6FD4700E3A5ED /* CSCoreUtils.framework */,
@@ -538,6 +540,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Release-iphoneos/CSCoreUtils",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/CSCoreUtils",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSCoreUtils/CSCoreUtils-Prefix.pch";
@@ -559,6 +562,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Release-iphoneos/CSCoreUtils",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/CSCoreUtils",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSCoreUtils/CSCoreUtils-Prefix.pch";
