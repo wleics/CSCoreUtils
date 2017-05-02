@@ -7,16 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /**
  图片加载完成后的回调
- 
- @param image
- @param url
- @param error
  */
-typedef void (^imageCompletionBlock)(UIImage * _Nullable image,
-NSURL * _Nullable url,
+typedef void (^ImageCompletionBlock)(UIImage * _Nullable image,
+NSURL * url,
 NSError * _Nullable error);
 
 @interface CSImageUtils : NSObject
@@ -80,7 +77,7 @@ NSError * _Nullable error);
        andImageUrl:(nullable NSString *)imageUrl
   placeholderImage:(nullable UIImage *)placeholderImage
          animation:(BOOL)animation
-          complete:(imageCompletionBlock _Nullable )complete;
+          complete:(ImageCompletionBlock)complete;
 
 /**
  获取图片在内存中的缓存大小

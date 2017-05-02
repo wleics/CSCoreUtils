@@ -80,7 +80,7 @@
        andImageUrl:(nullable NSString *)imageUrl
   placeholderImage:(nullable UIImage *)placeholderImage
          animation:(BOOL)animation
-          complete:(imageCompletionBlock _Nullable )complete{
+          complete:(ImageCompletionBlock)complete{
     if (imageview && imageUrl) {
         [imageview yy_setImageWithURL:[NSURL URLWithString:[imageUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]
                           placeholder:placeholderImage
