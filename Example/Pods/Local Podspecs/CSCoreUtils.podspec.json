@@ -19,6 +19,11 @@
     "ios": "8.0"
   },
   "source_files": "CSCoreUtils/Classes/**/*",
+  "resource_bundles": {
+    "CSCoreUtils": [
+      "CSCoreUtils/Assets/*"
+    ]
+  },
   "public_header_files": "CSCoreUtils/Classes/**/*.h",
   "frameworks": [
     "UIKit",

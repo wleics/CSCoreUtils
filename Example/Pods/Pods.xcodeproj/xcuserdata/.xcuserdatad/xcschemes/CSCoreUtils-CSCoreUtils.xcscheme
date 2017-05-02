@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '94B6593E98A985789AF51BA79E9ADDBD'
-               BlueprintName = 'MJExtension'
+               BlueprintIdentifier = 'CC494CA099A79BDD1486469379182747'
+               BlueprintName = 'CSCoreUtils-CSCoreUtils'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'MJExtension.framework'>
+               BuildableName = 'CSCoreUtils.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

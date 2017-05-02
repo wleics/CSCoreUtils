@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>CSCoreUtils-CSCoreUtils.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>CSCoreUtils.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -63,6 +68,31 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2A3FCB120153A292DC9059721CFAEFF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52792EE7DBE5BA5EE5C333AE0AF7E1E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FB4DA3F45EF21F7E6AFCD5FE17F573C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F3F39D8BBCB6C01BE52ACC24B1A3B23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7691EB3D201499CEA698FBCE7CD9E353</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7F5D42563EA7EDD2DE50ACF60DA95088</key>
 		<dict>
 			<key>primary</key>
@@ -73,12 +103,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>914CA18061E28C1AA9B96E15EDA90C94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9439038FD5130C44D8DFE5B660FA3D11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>94B6593E98A985789AF51BA79E9ADDBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>99D318E781FF18AD083A014FF3995526</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0A414B5EDD4A040F30CECC0E247F4A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -94,6 +139,11 @@
 			<true/>
 		</dict>
 		<key>C78A70DF4367651DEAA716BC51163753</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC494CA099A79BDD1486469379182747</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -12,6 +12,7 @@
 
 @interface csViewController ()
 
+@property (nonatomic,strong) CSHUDUtils *hudUtils;
 
 @end
 
@@ -20,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	self.title = @"网络请求操作演示";
     
 }
 
@@ -36,7 +37,7 @@
     [dict setObject:@"2fd0bc5263044357a3dacd969665032a" forKey:@"id"];
     
     NSString *data = [CSTools objToJsonString:dict];
-    NSLog(@"data:%@",data);
+    CSLog(@"data:%@",data);
     NSDictionary *params = @{@"data":data};
     
     CSHttpUtils *httpUtils = [CSHttpUtils httpUtils];
@@ -46,12 +47,20 @@
               
               NSString *json = [CSTools objToJsonString:dict];
               CSLog(@"json:%@",json);
-              
+              [self.hudUtils showSuccessWithStatusInHUD:@"网络请求成功！"];
           }
              andError:^(NSError *error) {
                  CSLog(@"error:%@",error);
+                 [self.hudUtils showErrorMsgInHUD:[error description]];
              }];
 
+}
+
+-(CSHUDUtils *)hudUtils{
+    if (!_hudUtils) {
+        _hudUtils = [[CSHUDUtils alloc] init];
+    }
+    return _hudUtils;
 }
 
 @end
