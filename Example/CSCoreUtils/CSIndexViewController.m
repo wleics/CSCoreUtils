@@ -7,10 +7,12 @@
 //
 
 #import "CSIndexViewController.h"
-#import "csViewController.h"
-#import "CSHUDDemoViewController.h"
+#import <CSCoreUtils/CSCoreUtils.h>
 
 @interface CSIndexViewController ()
+
+/// 通过键值对缓存的图片
+@property (weak, nonatomic) IBOutlet UIImageView *mKVcacheImage;
 
 @end
 
@@ -22,16 +24,38 @@
     
 }
 
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    UIImage *image =  [CSImageUtils getCacheImageForKey:@"mImage"];
+    if (image) {
+        _mKVcacheImage.image = image;
+    }else{
+        _mKVcacheImage.image = nil;
+    }
+}
 
 - (IBAction)showHttpDemoPage:(id)sender {
-    csViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"httpDemo"];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    [self sendToPageByIdentifier:@"httpDemo"];
 }
 
 - (IBAction)showHUDDemoPage:(id)sender {
-    CSHUDDemoViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"hudDemo"];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    [self sendToPageByIdentifier:@"hudDemo"];
+}
+
+- (IBAction)showImageLoaderDemoPage:(id)sender {
+    
+    [self sendToPageByIdentifier:@"imageLoaderDemo"];
+}
+
+-(void)sendToPageByIdentifier:(NSString *)identifier{
+    if (identifier) {
+        UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+        if (vc) {
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }
 }
 
 @end

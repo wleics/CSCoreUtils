@@ -148,6 +148,119 @@
             </objects>
             <point key="canvasLocation" x="-597.60000000000002" y="551.87406296851577"/>
         </scene>
+        <!--Image Loader Demo View Controller-->
+        <scene sceneID="yA6-tl-5VV">
+            <objects>
+                <viewController storyboardIdentifier="imageLoaderDemo" id="vbW-vB-9V5" customClass="CSImageLoaderDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f8o-0Q-4Gj"/>
+                        <viewControllerLayoutGuide type="bottom" id="P0f-gu-8fF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Nt-xE-wjR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GOO-b9-VRr">
+                                <rect key="frame" x="67" y="28" width="240" height="150"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Mi0-6L-qnx"/>
+                                    <constraint firstAttribute="height" constant="150" id="SAW-Ml-ujc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nb5-VK-Vmy">
+                                <rect key="frame" x="16" y="186" width="92" height="30"/>
+                                <state key="normal" title="加载网络图片"/>
+                                <connections>
+                                    <action selector="btnOnClick:" destination="vbW-vB-9V5" eventType="touchUpInside" id="eC9-h0-nWW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSY-ny-ru9">
+                                <rect key="frame" x="16" y="224" width="92" height="30"/>
+                                <state key="normal" title="清理图片缓存"/>
+                                <connections>
+                                    <action selector="btnOnClick:" destination="vbW-vB-9V5" eventType="touchUpInside" id="kZD-Qo-mgF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC5-XR-bcB">
+                                <rect key="frame" x="16" y="262" width="138" height="30"/>
+                                <state key="normal" title="按照键值对缓存图片"/>
+                                <connections>
+                                    <action selector="btnOnClick:" destination="vbW-vB-9V5" eventType="touchUpInside" id="Dw6-ia-3U5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67B-ur-pj1">
+                                <rect key="frame" x="16" y="314" width="153" height="30"/>
+                                <state key="normal" title="清理键值对缓存的图片"/>
+                                <connections>
+                                    <action selector="btnOnClick:" destination="vbW-vB-9V5" eventType="touchUpInside" id="oFd-kW-hHO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="被缓存图片加载主页显示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2q-a9-jea">
+                                <rect key="frame" x="16" y="292" width="135" height="14.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.18823529410000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="缓存图片个数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZP-vb-PVF">
+                                <rect key="frame" x="16" y="626" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4t-d3-Edi" userLabel="缓存图片大小(label)">
+                                <rect key="frame" x="146" y="618" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuE-Ym-rAd" userLabel="缓存图片个数(label)">
+                                <rect key="frame" x="146" y="647" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="缓存图片大小：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCn-Dw-IPv">
+                                <rect key="frame" x="16" y="597" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="67B-ur-pj1" firstAttribute="leading" secondItem="5Nt-xE-wjR" secondAttribute="leading" constant="16" id="2JQ-aN-e1x"/>
+                            <constraint firstItem="JC5-XR-bcB" firstAttribute="leading" secondItem="5Nt-xE-wjR" secondAttribute="leading" constant="16" id="31v-5p-Tq7"/>
+                            <constraint firstItem="JC5-XR-bcB" firstAttribute="top" secondItem="eSY-ny-ru9" secondAttribute="bottom" constant="8" id="5tG-Ks-GbJ"/>
+                            <constraint firstItem="eSY-ny-ru9" firstAttribute="top" secondItem="Nb5-VK-Vmy" secondAttribute="bottom" constant="8" id="7f8-N1-Fgl"/>
+                            <constraint firstItem="Nb5-VK-Vmy" firstAttribute="top" secondItem="GOO-b9-VRr" secondAttribute="bottom" constant="8" id="Bdu-UA-iv8"/>
+                            <constraint firstItem="GOO-b9-VRr" firstAttribute="top" secondItem="f8o-0Q-4Gj" secondAttribute="bottom" constant="8" id="EkP-N7-7Pq"/>
+                            <constraint firstItem="GOO-b9-VRr" firstAttribute="centerX" secondItem="5Nt-xE-wjR" secondAttribute="centerX" id="HFH-fJ-Fk2"/>
+                            <constraint firstItem="W2q-a9-jea" firstAttribute="top" secondItem="JC5-XR-bcB" secondAttribute="bottom" id="KhV-O5-2Kt"/>
+                            <constraint firstItem="Nb5-VK-Vmy" firstAttribute="leading" secondItem="5Nt-xE-wjR" secondAttribute="leading" constant="16" id="M9A-zd-C62"/>
+                            <constraint firstItem="67B-ur-pj1" firstAttribute="top" secondItem="W2q-a9-jea" secondAttribute="bottom" constant="8" id="TAG-Yg-3jp"/>
+                            <constraint firstItem="X4t-d3-Edi" firstAttribute="baseline" secondItem="xCn-Dw-IPv" secondAttribute="baseline" id="TH2-vv-ab5"/>
+                            <constraint firstItem="CZP-vb-PVF" firstAttribute="leading" secondItem="5Nt-xE-wjR" secondAttribute="leading" constant="16" id="aCq-s6-XMy"/>
+                            <constraint firstItem="X4t-d3-Edi" firstAttribute="leading" secondItem="xCn-Dw-IPv" secondAttribute="trailing" constant="8" id="an0-6H-EDm"/>
+                            <constraint firstItem="xCn-Dw-IPv" firstAttribute="leading" secondItem="CZP-vb-PVF" secondAttribute="leading" id="bkO-Ct-ivg"/>
+                            <constraint firstItem="tuE-Ym-rAd" firstAttribute="leading" secondItem="CZP-vb-PVF" secondAttribute="trailing" constant="8" id="dZf-rN-7xu"/>
+                            <constraint firstItem="tuE-Ym-rAd" firstAttribute="baseline" secondItem="CZP-vb-PVF" secondAttribute="baseline" id="omn-4Q-16w"/>
+                            <constraint firstItem="eSY-ny-ru9" firstAttribute="leading" secondItem="5Nt-xE-wjR" secondAttribute="leading" constant="16" id="ppd-FD-bCs"/>
+                            <constraint firstItem="W2q-a9-jea" firstAttribute="leading" secondItem="5Nt-xE-wjR" secondAttribute="leading" constant="16" id="pun-E4-kcL"/>
+                            <constraint firstItem="P0f-gu-8fF" firstAttribute="top" secondItem="CZP-vb-PVF" secondAttribute="bottom" constant="20" id="q9j-bc-swR"/>
+                            <constraint firstItem="CZP-vb-PVF" firstAttribute="top" secondItem="xCn-Dw-IPv" secondAttribute="bottom" constant="8" id="zSd-yZ-WU5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mCoastLabel" destination="X4t-d3-Edi" id="SQP-tw-1Fh"/>
+                        <outlet property="mCountLabel" destination="tuE-Ym-rAd" id="9tc-w0-4nd"/>
+                        <outlet property="mImageView" destination="GOO-b9-VRr" id="Nt3-mr-HO9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kg4-De-VEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="553"/>
+        </scene>
         <!--主页-->
         <scene sceneID="96n-CP-bgi">
             <objects>
@@ -180,18 +293,40 @@
                                     <action selector="showHUDDemoPage:" destination="dzU-61-dRK" eventType="touchUpInside" id="Fw0-Ie-iEy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQt-mn-QL7">
+                                <rect key="frame" x="16" y="148" width="343" height="30"/>
+                                <state key="normal" title="网络图片的加载"/>
+                                <connections>
+                                    <action selector="showImageLoaderDemoPage:" destination="dzU-61-dRK" eventType="touchUpInside" id="HFL-iC-itT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b4p-bl-aXw">
+                                <rect key="frame" x="127" y="583" width="120" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="U3X-Or-VCF"/>
+                                    <constraint firstAttribute="height" constant="64" id="nQX-6U-S3j"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kQt-mn-QL7" firstAttribute="leading" secondItem="Lyc-bH-8DB" secondAttribute="leading" constant="16" id="3Sk-mq-Qrz"/>
+                            <constraint firstItem="kQt-mn-QL7" firstAttribute="top" secondItem="xFa-4f-bXm" secondAttribute="bottom" constant="8" id="9aR-Kq-HXA"/>
                             <constraint firstAttribute="trailing" secondItem="xFa-4f-bXm" secondAttribute="trailing" constant="16" id="ELk-Y1-hVQ"/>
                             <constraint firstAttribute="trailing" secondItem="ipK-Ye-CHK" secondAttribute="trailing" constant="16" id="G0a-qE-eqi"/>
+                            <constraint firstItem="b4p-bl-aXw" firstAttribute="centerX" secondItem="Lyc-bH-8DB" secondAttribute="centerX" id="VzS-Lx-GNF"/>
                             <constraint firstItem="xFa-4f-bXm" firstAttribute="top" secondItem="ipK-Ye-CHK" secondAttribute="bottom" constant="8" id="Y6b-xe-jVf"/>
                             <constraint firstItem="ipK-Ye-CHK" firstAttribute="top" secondItem="UZZ-dO-eos" secondAttribute="bottom" constant="8" id="bbC-mo-fZl"/>
+                            <constraint firstItem="5qA-VK-c3C" firstAttribute="top" secondItem="b4p-bl-aXw" secondAttribute="bottom" constant="20" id="dC2-lo-fL6"/>
                             <constraint firstItem="ipK-Ye-CHK" firstAttribute="leading" secondItem="Lyc-bH-8DB" secondAttribute="leading" constant="16" id="igz-8v-LTK"/>
                             <constraint firstItem="xFa-4f-bXm" firstAttribute="leading" secondItem="Lyc-bH-8DB" secondAttribute="leading" constant="16" id="vKR-5V-Rx3"/>
+                            <constraint firstAttribute="trailing" secondItem="kQt-mn-QL7" secondAttribute="trailing" constant="16" id="xRz-3Y-wpV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VbV-cF-WVF"/>
+                    <connections>
+                        <outlet property="mKVcacheImage" destination="b4p-bl-aXw" id="O2Y-te-NxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGp-dD-vTD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

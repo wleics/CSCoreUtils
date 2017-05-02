@@ -13,6 +13,7 @@
 #import "CSCoreUtils.h"
 #import "CSHttpUtils.h"
 #import "CSHUDUtils.h"
+#import "CSImageUtils.h"
 #import "CSTools.h"
 #import "HttpRequestBase.h"
 #import "SVIndefiniteAnimatedView.h"

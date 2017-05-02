@@ -33,4 +33,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'SystemConfiguration','MobileCoreServices'
   s.dependency 'AFNetworking', '~> 3.1'
   s.dependency 'MJExtension'
+  s.dependency 'YYWebImage'
+  s.dependency 'pop', '~> 1.0'
 end

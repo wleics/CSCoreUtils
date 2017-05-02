@@ -36,6 +36,12 @@
     ],
     "MJExtension": [
 
+    ],
+    "YYWebImage": [
+
+    ],
+    "pop": [
+      "~> 1.0"
     ]
   }
 }
