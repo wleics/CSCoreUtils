@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '40E3F785465BEE8A5D1C88C485CE67D1'
+               BlueprintIdentifier = '719F8D8FA9ABFB32CE9DDBD7FD9388BE'
                BlueprintName = 'CSCoreUtils'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'CSCoreUtils.framework'>

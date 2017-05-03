@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CSCoreUtils'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A short description of CSCoreUtils.'
 
   s.description      = <<-DESC
@@ -16,21 +16,23 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/wleics/CSCoreUtils'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = 'MIT'
   s.author           = { 'wleics' => 'wleics@163.com' }
-  s.source           = { :git => 'https://github.com/wleics/CSCoreUtils.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wleics/CSCoreUtils.git', :tag => '0.1.5' }
 
   s.ios.deployment_target = '8.0'
+  s.platform     = :ios, '8.0'
+  s.requires_arc = true
 
   s.source_files = 'CSCoreUtils/Classes/**/*'
   
   s.resource_bundles = {
-    #'CSCoreUtils' => ['CSCoreUtils/Assets/*.png']
     'CSCoreUtils' => ['CSCoreUtils/Assets/*']
   }
 
   s.public_header_files = 'CSCoreUtils/Classes/**/*.h'
   s.frameworks = 'UIKit', 'SystemConfiguration','MobileCoreServices'
+  #s.libraries  = 'z.1'
   s.dependency 'AFNetworking', '~> 3.1'
   s.dependency 'MJExtension'
   s.dependency 'YYWebImage'

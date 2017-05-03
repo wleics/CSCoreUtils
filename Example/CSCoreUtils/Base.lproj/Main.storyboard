@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -148,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="-597.60000000000002" y="551.87406296851577"/>
         </scene>
-        <!--Image Loader Demo View Controller-->
+        <!--网络图片加载演示-->
         <scene sceneID="yA6-tl-5VV">
             <objects>
-                <viewController storyboardIdentifier="imageLoaderDemo" id="vbW-vB-9V5" customClass="CSImageLoaderDemoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imageLoaderDemo" id="vbW-vB-9V5" userLabel="网络图片加载演示" customClass="CSImageLoaderDemoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f8o-0Q-4Gj"/>
                         <viewControllerLayoutGuide type="bottom" id="P0f-gu-8fF"/>
@@ -261,6 +262,108 @@
             </objects>
             <point key="canvasLocation" x="63" y="553"/>
         </scene>
+        <!--View Extension Demo View Controller-->
+        <scene sceneID="uki-p9-cIW">
+            <objects>
+                <viewController storyboardIdentifier="viewExtensionDemo" id="2TQ-Sp-B1Y" customClass="CSViewExtensionDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="shU-KR-gCP"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZQS-P2-LqV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zgT-2F-I83">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="def_webimage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6on-SW-4zh">
+                                <rect key="frame" x="54" y="80" width="266" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgg-0x-zkk" userLabel="增加图片宽度btn">
+                                <rect key="frame" x="54" y="240" width="92" height="30"/>
+                                <state key="normal" title="增加图片宽度"/>
+                                <connections>
+                                    <action selector="buttonOnClick:" destination="2TQ-Sp-B1Y" eventType="touchUpInside" id="LLo-KJ-wSU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43o-Ex-bMi" userLabel="增加图片高度btn">
+                                <rect key="frame" x="54" y="278" width="92" height="30"/>
+                                <state key="normal" title="增加图片高度"/>
+                                <connections>
+                                    <action selector="buttonOnClick:" destination="2TQ-Sp-B1Y" eventType="touchUpInside" id="CdY-5U-S2H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jh-Eb-LrB" userLabel="调整图片x值btn">
+                                <rect key="frame" x="54" y="316" width="85" height="30"/>
+                                <state key="normal" title="调整图片x值"/>
+                                <connections>
+                                    <action selector="buttonOnClick:" destination="2TQ-Sp-B1Y" eventType="touchUpInside" id="ecx-4E-lRe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1An-LZ-KlK" userLabel="调整图片y值btn">
+                                <rect key="frame" x="54" y="354" width="85" height="30"/>
+                                <state key="normal" title="调整图片y值"/>
+                                <connections>
+                                    <action selector="buttonOnClick:" destination="2TQ-Sp-B1Y" eventType="touchUpInside" id="EeV-P6-eV3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dum-L1-YDP" userLabel="获取图片的View信息btn">
+                                <rect key="frame" x="54" y="392" width="141" height="30"/>
+                                <state key="normal" title="获取图片的View信息"/>
+                                <connections>
+                                    <action selector="buttonOnClick:" destination="2TQ-Sp-B1Y" eventType="touchUpInside" id="cjx-lZ-lBv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kb-dL-8J7" userLabel="uiview基础信息输出">
+                                <rect key="frame" x="16" y="647" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQV-ql-rIr">
+                                <rect key="frame" x="54" y="430" width="31" height="30"/>
+                                <state key="normal" title="隐藏"/>
+                                <connections>
+                                    <action selector="buttonOnClick:" destination="2TQ-Sp-B1Y" eventType="touchUpInside" id="CY0-IB-joa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekT-MV-mlq">
+                                <rect key="frame" x="54" y="468" width="31" height="30"/>
+                                <state key="normal" title="显示"/>
+                                <connections>
+                                    <action selector="buttonOnClick:" destination="2TQ-Sp-B1Y" eventType="touchUpInside" id="iR5-3p-PaG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1An-LZ-KlK" firstAttribute="top" secondItem="8Jh-Eb-LrB" secondAttribute="bottom" constant="8" id="1PB-it-Enm"/>
+                            <constraint firstItem="ekT-MV-mlq" firstAttribute="leading" secondItem="QQV-ql-rIr" secondAttribute="leading" id="2DO-HD-k3y"/>
+                            <constraint firstItem="dum-L1-YDP" firstAttribute="leading" secondItem="1An-LZ-KlK" secondAttribute="leading" id="5sR-Xu-SgJ"/>
+                            <constraint firstItem="QQV-ql-rIr" firstAttribute="top" secondItem="dum-L1-YDP" secondAttribute="bottom" constant="8" id="6Jl-w6-Tn0"/>
+                            <constraint firstItem="pgg-0x-zkk" firstAttribute="leading" secondItem="zgT-2F-I83" secondAttribute="leadingMargin" constant="38" id="7Be-zG-8nD"/>
+                            <constraint firstItem="pgg-0x-zkk" firstAttribute="top" secondItem="shU-KR-gCP" secondAttribute="bottom" constant="220" id="Bch-tG-369"/>
+                            <constraint firstItem="43o-Ex-bMi" firstAttribute="leading" secondItem="pgg-0x-zkk" secondAttribute="leading" id="Dye-Bw-YXI"/>
+                            <constraint firstItem="0kb-dL-8J7" firstAttribute="leading" secondItem="zgT-2F-I83" secondAttribute="leading" constant="16" id="N0v-Ja-dms"/>
+                            <constraint firstItem="43o-Ex-bMi" firstAttribute="top" secondItem="pgg-0x-zkk" secondAttribute="bottom" constant="8" id="QV8-s0-Gcz"/>
+                            <constraint firstItem="dum-L1-YDP" firstAttribute="top" secondItem="1An-LZ-KlK" secondAttribute="bottom" constant="8" id="RsM-KO-SAR"/>
+                            <constraint firstItem="ekT-MV-mlq" firstAttribute="top" secondItem="QQV-ql-rIr" secondAttribute="bottom" constant="8" id="X4O-MJ-lNx"/>
+                            <constraint firstItem="1An-LZ-KlK" firstAttribute="leading" secondItem="8Jh-Eb-LrB" secondAttribute="leading" id="Y0g-dO-yV3"/>
+                            <constraint firstAttribute="trailing" secondItem="0kb-dL-8J7" secondAttribute="trailing" constant="16" id="cJP-j0-pa3"/>
+                            <constraint firstItem="8Jh-Eb-LrB" firstAttribute="top" secondItem="43o-Ex-bMi" secondAttribute="bottom" constant="8" id="j7N-sO-7fP"/>
+                            <constraint firstItem="QQV-ql-rIr" firstAttribute="leading" secondItem="dum-L1-YDP" secondAttribute="leading" id="p3S-xY-MDg"/>
+                            <constraint firstItem="8Jh-Eb-LrB" firstAttribute="leading" secondItem="43o-Ex-bMi" secondAttribute="leading" id="tPl-D0-JQe"/>
+                            <constraint firstItem="ZQS-P2-LqV" firstAttribute="top" secondItem="0kb-dL-8J7" secondAttribute="bottom" constant="20" id="xHM-kd-EGl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mImageView" destination="6on-SW-4zh" id="zWr-4W-wlv"/>
+                        <outlet property="mLabel" destination="0kb-dL-8J7" id="jzR-ea-Sz9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zw0-GV-Ge5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="556"/>
+        </scene>
         <!--主页-->
         <scene sceneID="96n-CP-bgi">
             <objects>
@@ -307,15 +410,24 @@
                                     <constraint firstAttribute="height" constant="64" id="nQX-6U-S3j"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZP-2A-pjr">
+                                <rect key="frame" x="16" y="186" width="79" height="30"/>
+                                <state key="normal" title="UIView扩展"/>
+                                <connections>
+                                    <action selector="showUIViewExtensionDemoPage:" destination="dzU-61-dRK" eventType="touchUpInside" id="PRh-eu-Li2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kQt-mn-QL7" firstAttribute="leading" secondItem="Lyc-bH-8DB" secondAttribute="leading" constant="16" id="3Sk-mq-Qrz"/>
                             <constraint firstItem="kQt-mn-QL7" firstAttribute="top" secondItem="xFa-4f-bXm" secondAttribute="bottom" constant="8" id="9aR-Kq-HXA"/>
+                            <constraint firstItem="qZP-2A-pjr" firstAttribute="leading" secondItem="Lyc-bH-8DB" secondAttribute="leading" constant="16" id="AdF-0c-0ji"/>
                             <constraint firstAttribute="trailing" secondItem="xFa-4f-bXm" secondAttribute="trailing" constant="16" id="ELk-Y1-hVQ"/>
                             <constraint firstAttribute="trailing" secondItem="ipK-Ye-CHK" secondAttribute="trailing" constant="16" id="G0a-qE-eqi"/>
                             <constraint firstItem="b4p-bl-aXw" firstAttribute="centerX" secondItem="Lyc-bH-8DB" secondAttribute="centerX" id="VzS-Lx-GNF"/>
                             <constraint firstItem="xFa-4f-bXm" firstAttribute="top" secondItem="ipK-Ye-CHK" secondAttribute="bottom" constant="8" id="Y6b-xe-jVf"/>
+                            <constraint firstItem="qZP-2A-pjr" firstAttribute="top" secondItem="kQt-mn-QL7" secondAttribute="bottom" constant="8" id="a2l-PT-7l7"/>
                             <constraint firstItem="ipK-Ye-CHK" firstAttribute="top" secondItem="UZZ-dO-eos" secondAttribute="bottom" constant="8" id="bbC-mo-fZl"/>
                             <constraint firstItem="5qA-VK-c3C" firstAttribute="top" secondItem="b4p-bl-aXw" secondAttribute="bottom" constant="20" id="dC2-lo-fL6"/>
                             <constraint firstItem="ipK-Ye-CHK" firstAttribute="leading" secondItem="Lyc-bH-8DB" secondAttribute="leading" constant="16" id="igz-8v-LTK"/>
@@ -349,4 +461,7 @@
             <point key="canvasLocation" x="-1297" y="-125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="def_webimage.jpg" width="266" height="150"/>
+    </resources>
 </document>

@@ -11,6 +11,7 @@
 #import "CSTools.h"
 #import "CSHUDUtils.h"
 #import "CSImageUtils.h"
+#import "UIView+CSViewExtension.h"
 
 #ifdef DEBUG
 #   define CSLog(...) NSLog(__VA_ARGS__)

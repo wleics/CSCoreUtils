@@ -23,6 +23,7 @@
 		631F5F3F1EB826BE00A7DED7 /* CSIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F5F3E1EB826BE00A7DED7 /* CSIndexViewController.m */; };
 		631F5F421EB8290800A7DED7 /* CSHUDDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F5F411EB8290800A7DED7 /* CSHUDDemoViewController.m */; };
 		631F5F4C1EB8595900A7DED7 /* CSImageLoaderDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F5F4B1EB8595900A7DED7 /* CSImageLoaderDemoViewController.m */; };
+		63801C301EB977C0006F4D14 /* CSViewExtensionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63801C2F1EB977C0006F4D14 /* CSViewExtensionDemoViewController.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		783E60E242400CCA5D0A9820 /* Pods_CSCoreUtils_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E370612BF45054F3F81B9A /* Pods_CSCoreUtils_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
@@ -74,6 +75,8 @@
 		631F5F411EB8290800A7DED7 /* CSHUDDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHUDDemoViewController.m; sourceTree = "<group>"; };
 		631F5F4A1EB8595900A7DED7 /* CSImageLoaderDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSImageLoaderDemoViewController.h; sourceTree = "<group>"; };
 		631F5F4B1EB8595900A7DED7 /* CSImageLoaderDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSImageLoaderDemoViewController.m; sourceTree = "<group>"; };
+		63801C2E1EB977C0006F4D14 /* CSViewExtensionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSViewExtensionDemoViewController.h; sourceTree = "<group>"; };
+		63801C2F1EB977C0006F4D14 /* CSViewExtensionDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSViewExtensionDemoViewController.m; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F3583733F48177973572019 /* Pods_CSCoreUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSCoreUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +217,8 @@
 				631F5F411EB8290800A7DED7 /* CSHUDDemoViewController.m */,
 				631F5F4A1EB8595900A7DED7 /* CSImageLoaderDemoViewController.h */,
 				631F5F4B1EB8595900A7DED7 /* CSImageLoaderDemoViewController.m */,
+				63801C2E1EB977C0006F4D14 /* CSViewExtensionDemoViewController.h */,
+				63801C2F1EB977C0006F4D14 /* CSViewExtensionDemoViewController.m */,
 			);
 			name = demo;
 			sourceTree = "<group>";
@@ -436,6 +441,7 @@
 				631F5F421EB8290800A7DED7 /* CSHUDDemoViewController.m in Sources */,
 				631F5F4C1EB8595900A7DED7 /* CSImageLoaderDemoViewController.m in Sources */,
 				631F5F3F1EB826BE00A7DED7 /* CSIndexViewController.m in Sources */,
+				63801C301EB977C0006F4D14 /* CSViewExtensionDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

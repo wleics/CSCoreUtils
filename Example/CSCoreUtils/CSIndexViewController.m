@@ -49,6 +49,11 @@
     [self sendToPageByIdentifier:@"imageLoaderDemo"];
 }
 
+- (IBAction)showUIViewExtensionDemoPage:(id)sender {
+    
+    [self sendToPageByIdentifier:@"viewExtensionDemo"];
+}
+
 -(void)sendToPageByIdentifier:(NSString *)identifier{
     if (identifier) {
         UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:identifier];

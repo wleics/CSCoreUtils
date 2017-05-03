@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - CSCoreUtils (0.1.4):
+  - CSCoreUtils (0.1.5):
     - AFNetworking (~> 3.1)
     - MJExtension
     - pop (~> 1.0)
@@ -38,7 +38,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CSCoreUtils: aec0778afc4dc3c3dd5cdbda564800e14f30df47
+  CSCoreUtils: 7ea125d2d5a1d8ff895a3daff9e2df005550831f
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
