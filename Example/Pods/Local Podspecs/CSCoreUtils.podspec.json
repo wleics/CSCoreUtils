@@ -17,11 +17,7 @@
   },
   "requires_arc": true,
   "source_files": "CSCoreUtils/Classes/**/*",
-  "resource_bundles": {
-    "CSCoreUtils": [
-      "CSCoreUtils/Assets/*"
-    ]
-  },
+  "resources": "CSCoreUtils/Assets/SVProgressHUD.bundle",
   "public_header_files": "CSCoreUtils/Classes/**/*.h",
   "frameworks": [
     "UIKit",

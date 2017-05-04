@@ -25,10 +25,11 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'CSCoreUtils/Classes/**/*'
-  
-  s.resource_bundles = {
-    'CSCoreUtils' => ['CSCoreUtils/Assets/*']
-  }
+  s.resources    = 'CSCoreUtils/Assets/SVProgressHUD.bundle'
+
+#s.resource_bundles = {
+#    'CSCoreUtils' => ['CSCoreUtils/Assets/*']
+#  }
 
   s.public_header_files = 'CSCoreUtils/Classes/**/*.h'
   s.frameworks = 'UIKit', 'SystemConfiguration','MobileCoreServices'
